@@ -1,3 +1,21 @@
+# [1.1.0](https://github.com/UgoxyFavour/Soroban-Loyalty/compare/v1.0.0...v1.1.0) (2026-04-28)
+
+
+### Bug Fixes
+
+* add database indexes for frequently queried columns ([5a96ade](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/5a96ade3b8adfcc32e93793acf26aa78471f5327))
+
+
+### Features
+
+* add onboarding flow ([#46](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/46)) and tooltip system ([#57](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/57)) ([28bb3aa](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/28bb3aaf5c2fa4f06da7c7502006bc5d93137fdb))
+* add search and filtering to GET /campaigns ([788e523](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/788e5239ae17036dcea192bb0c15a4243c8a2ddd))
+* all issue ([a5a1c49](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/a5a1c494bad55dd717f570a8d5b5f47add9814d2))
+* harden Dockerfiles and add Trivy image scanning to CI ([2a51d90](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/2a51d903aeb26e49732b708bdda8cfcf4521f9a3))
+* **rewards:** implement linear vesting schedule per campaign ([047d419](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/047d419d7e3942b6025aab8146c6ec1575790ee4)), closes [#128](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/128)
+* **rewards:** implement storage migration pattern with idempotency guard ([69b429e](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/69b429e3bfc17f770625e806f1ec8556af3779dd)), closes [#119](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/119)
+* **token:** implement multi-sig admin for mint and set_admin ([c09f586](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/c09f586f7178107bfa046b2da183372766005566)), closes [#114](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/114)
+
 # 1.0.0 (2026-04-27)
 # [1.22.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.21.1...v1.22.0) (2026-04-28)
 
