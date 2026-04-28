@@ -6,6 +6,7 @@ import {
   reorderCampaigns,
   softDeleteCampaign,
   restoreCampaign,
+  CampaignFilters,
 } from "../services/campaign.service";
 import { redisClient } from "../lib/redis";
 import { logger } from "../logger";
@@ -18,8 +19,8 @@ export const campaignRouter = Router();
  * @openapi
  * /campaigns:
  *   get:
- *     summary: List all campaigns
- *     description: Returns a paginated list of all campaigns stored in the database.
+ *     summary: List campaigns
+ *     description: Returns a paginated, filterable list of campaigns.
  *     tags: [Campaigns]
  *     parameters:
  *       - in: query
@@ -34,6 +35,27 @@ export const campaignRouter = Router();
  *           type: integer
  *           default: 0
  *         description: Number of campaigns to skip.
+ *       - in: query
+ *         name: search
+ *         schema:
+ *           type: string
+ *         description: Case-insensitive substring match on campaign name.
+ *       - in: query
+ *         name: status
+ *         schema:
+ *           type: string
+ *           enum: [active, inactive]
+ *         description: Filter by campaign active status.
+ *       - in: query
+ *         name: expires_before
+ *         schema:
+ *           type: integer
+ *         description: Return campaigns expiring at or before this unix timestamp.
+ *       - in: query
+ *         name: expires_after
+ *         schema:
+ *           type: integer
+ *         description: Return campaigns expiring at or after this unix timestamp.
  *     responses:
  *       200:
  *         description: A list of campaigns.
@@ -48,6 +70,8 @@ export const campaignRouter = Router();
  *                     $ref: '#/components/schemas/Campaign'
  *                 total:
  *                   type: integer
+ *       400:
+ *         description: Invalid query parameters.
  *       500:
  *         description: Server error.
  *         content:
@@ -79,6 +103,22 @@ campaignRouter.get("/", asyncHandler(async (req: Request, res: Response) => {
     logger.error("Redis cache write error", err as Error);
   }
 
+
+  const filters: CampaignFilters = {};
+  if (req.query.search) filters.search = String(req.query.search);
+  if (req.query.status === "active" || req.query.status === "inactive") {
+    filters.status = req.query.status;
+  }
+  if (req.query.expires_before) {
+    const v = parseInt(String(req.query.expires_before), 10);
+    if (!isNaN(v)) filters.expires_before = v;
+  }
+  if (req.query.expires_after) {
+    const v = parseInt(String(req.query.expires_after), 10);
+    if (!isNaN(v)) filters.expires_after = v;
+  }
+
+  const result = await getCampaigns(limit, offset, filters);
   res.json(result);
 }));
 

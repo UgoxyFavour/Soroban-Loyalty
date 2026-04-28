@@ -1,3 +1,102 @@
+# [1.22.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.21.1...v1.22.0) (2026-04-28)
+
+
+### Features
+
+* add onboarding flow ([#46](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/46)) and tooltip system ([#57](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/57)) ([28bb3aa](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/28bb3aaf5c2fa4f06da7c7502006bc5d93137fdb))
+
+## [1.21.1](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.21.0...v1.21.1) (2026-04-28)
+
+
+### Bug Fixes
+
+* add database indexes for frequently queried columns ([5a96ade](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/5a96ade3b8adfcc32e93793acf26aa78471f5327))
+
+# [1.21.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.20.0...v1.21.0) (2026-04-28)
+
+
+### Features
+
+* add search and filtering to GET /campaigns ([788e523](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/788e5239ae17036dcea192bb0c15a4243c8a2ddd))
+
+# [1.20.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.19.0...v1.20.0) (2026-04-28)
+
+
+### Features
+
+* **rewards:** implement storage migration pattern with idempotency guard ([69b429e](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/69b429e3bfc17f770625e806f1ec8556af3779dd)), closes [#119](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/119)
+* **token:** implement multi-sig admin for mint and set_admin ([c09f586](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/c09f586f7178107bfa046b2da183372766005566)), closes [#114](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/114)
+
+# [1.19.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.18.0...v1.19.0) (2026-04-28)
+
+
+### Features
+
+* **rewards:** implement linear vesting schedule per campaign ([047d419](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/047d419d7e3942b6025aab8146c6ec1575790ee4)), closes [#128](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/128)
+
+# [1.18.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.17.0...v1.18.0) (2026-04-28)
+
+
+### Features
+
+* harden Dockerfiles and add Trivy image scanning to CI ([2a51d90](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/2a51d903aeb26e49732b708bdda8cfcf4521f9a3))
+
+# [1.17.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.16.0...v1.17.0) (2026-04-28)
+
+
+### Features
+
+* all issue ([a5a1c49](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/a5a1c494bad55dd717f570a8d5b5f47add9814d2))
+
+# [1.16.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.15.1...v1.16.0) (2026-04-27)
+
+
+### Features
+
+* **analytics:** implement A/B testing framework ([#62](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/62)) ([84b5dcd](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/84b5dcd388dc48b1001a44de1be8eeaa87c8ba60))
+
+## [1.15.1](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.15.0...v1.15.1) (2026-04-27)
+
+
+### Performance Improvements
+
+* optimize token transfer gas costs and add benchmarks ([21347d7](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/21347d750b92ce287579f39e4c6bcbb6e9672d7b))
+
+# [1.15.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.14.0...v1.15.0) (2026-04-27)
+
+
+### Features
+
+* **ui:** design and implement landing page ([#55](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/55)) ([da5dffd](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/da5dffd0017f06287221752648c1a41fe4c03064))
+
+# [1.14.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.13.0...v1.14.0) (2026-04-27)
+
+
+### Features
+
+* add skeleton loading states to analytics page ([142e9dc](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/142e9dcdea34b385ab5b6e77d472b7c4683fc158))
+
+# [1.13.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.12.0...v1.13.0) (2026-04-27)
+
+
+### Features
+
+* **ui:** add multi-step transaction progress indicator ([#54](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/54)) ([bb94699](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/bb946995c002e6f002306edaef112efbcad7bec9))
+
+# [1.12.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.11.0...v1.12.0) (2026-04-27)
+
+
+### Features
+
+* **ui:** responsive navigation with mobile hamburger menu ([109ef41](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/109ef41db92f1ace79fdb3beaf6f233ac9809318)), closes [#49](https://github.com/Dev-Odun-oss/Soroban-Loyalty/issues/49)
+
+# [1.11.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.10.0...v1.11.0) (2026-04-27)
+
+
+### Features
+
+* add time-weighted reward multiplier to rewards contract ([e4201aa](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/e4201aaf88d9e9ef3ab805526f4611832b1cad32))
+
 # [1.10.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.9.0...v1.10.0) (2026-04-27)
 
 
