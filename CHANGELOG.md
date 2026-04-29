@@ -1,3 +1,11 @@
+# [1.24.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.23.0...v1.24.0) (2026-04-29)
+
+
+### Features
+
+* add emergency pause mechanism across all three contracts ([d66d81b](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/d66d81ba0e3338228ed19f23c0c2c31964d2528d))
+* automated PostgreSQL backup to S3 with 30-day retention ([ea0bc10](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/ea0bc100c998db10853c2a5cc57c4eadb554379e))
+
 # [1.23.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.22.1...v1.23.0) (2026-04-29)
 
 
