@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.26.0...v1.27.0) (2026-04-29)
+
+
+### Features
+
+* code of conduct ([cde1693](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/cde169306cfa77312bd66eb5d7747578c64d0ea8))
+
 # [1.26.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.25.0...v1.26.0) (2026-04-29)
 
 
