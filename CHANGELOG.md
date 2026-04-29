@@ -1,3 +1,27 @@
+# [1.2.0](https://github.com/UgoxyFavour/Soroban-Loyalty/compare/v1.1.0...v1.2.0) (2026-04-29)
+
+
+### Bug Fixes
+
+* WCAG 2.1 AA contrast audit and fixes ([f9b08bd](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/f9b08bd8de03379632b8d5549c650fc69a05ed9f))
+
+
+### Features
+
+* add emergency pause mechanism across all three contracts ([d66d81b](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/d66d81ba0e3338228ed19f23c0c2c31964d2528d))
+* audit log table for sensitive operations ([#22](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/22)) ([a46eb16](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/a46eb160f40f35ae418a290535d832eda1162fde))
+* automated PostgreSQL backup to S3 with 30-day retention ([ea0bc10](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/ea0bc100c998db10853c2a5cc57c4eadb554379e))
+* campaign deactivation UI for merchants ([#42](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/42)) ([df5d064](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/df5d0649cb1728f46d6bac619dd5c112a9624ff4))
+* centralized log aggregation with ELK stack ([#74](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/74)) ([c0b9e6d](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/c0b9e6d3b857a91cddd82d1351e8d7bf589af40a))
+* code of conduct ([cde1693](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/cde169306cfa77312bd66eb5d7747578c64d0ea8))
+* **contracts:** add campaign pause and resume functionality ([62027e7](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/62027e70cebf4560327e160f5398c9761f8cd9cb))
+* JWT authentication for merchant endpoints ([#9](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/9)) ([327ffe7](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/327ffe771235220afe87007436bb9856b28a9646))
+
+
+### Performance Improvements
+
+* optimize campaign storage layout and implement temporary storage [#110](https://github.com/UgoxyFavour/Soroban-Loyalty/issues/110) ([1d2b4c7](https://github.com/UgoxyFavour/Soroban-Loyalty/commit/1d2b4c740c69e097f0afdfa996b78890af69941c))
+
 # [1.1.0](https://github.com/UgoxyFavour/Soroban-Loyalty/compare/v1.0.0...v1.1.0) (2026-04-28)
 # [1.28.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.27.1...v1.28.0) (2026-04-29)
 
