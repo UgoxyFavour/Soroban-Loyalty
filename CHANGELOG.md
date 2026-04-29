@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.24.0...v1.25.0) (2026-04-29)
+
+
+### Features
+
+* **contracts:** add campaign pause and resume functionality ([62027e7](https://github.com/Dev-Odun-oss/Soroban-Loyalty/commit/62027e70cebf4560327e160f5398c9761f8cd9cb))
+
 # [1.24.0](https://github.com/Dev-Odun-oss/Soroban-Loyalty/compare/v1.23.0...v1.24.0) (2026-04-29)
 
 
