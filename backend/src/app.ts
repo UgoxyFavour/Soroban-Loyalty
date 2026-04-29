@@ -3,6 +3,7 @@ import cors from "cors";
 import { campaignRouter } from "./routes/campaign.routes";
 import { rewardRouter } from "./routes/reward.routes";
 import { analyticsRouter } from "./routes/analytics.routes";
+import { adminRouter } from "./routes/admin.routes";
 import { rpcServer } from "./soroban";
 import { pool } from "./db";
 import {
@@ -109,6 +110,7 @@ export function createApp() {
   app.use("/campaigns", campaignRouter);
   app.use("/", rewardRouter);
   app.use("/analytics", analyticsRouter);
+  app.use("/admin", adminRouter);
 
   app.use(errorAlertMiddleware);
 
